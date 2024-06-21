@@ -1,113 +1,405 @@
-/* Desktop Version */
-
 *{
     background-color: black;
 }
 
-.home-main-container{
-    margin-top: 15%;
-    display: inline-flex;
+
+
+/*  
+    --------------------------------
+    Screen Size - For Laptop 
+    --------------------------------
+*/
+
+@media only screen and (min-width: 1100px){
+    .home-main-container{
+        margin-top: 15%;
+        display: inline-flex;
+        overflow: hidden;
+        position: relative; 
+        border: none;
+    }
+    
+    .home-main-container::before,
+    .home-main-container::after {
+        content: '';
+        position: absolute;
+        border: 1px solid yellow;
+    }
+    
+    .home-main-container::before {
+        top: 0px;
+        right: 0px;
+        width: 20px;
+        height: 20px;
+        border-top-right-radius: 10px;
+        border-left: none;
+        border-bottom: none;
+    }
+    
+    .home-main-container::after {
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        border-bottom-right-radius: 10px;
+        border-left: none;
+        border-top: none;
+    }
+    
+    .home-headshot-container{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .home-headshot{
+        width: 75%; 
+        height: 100%; 
+         border-radius: 10px;
+    }
+    
+    .home-more-info{
+    
+    }
+    
+    .home-menue-bar{
+    
+    }
+    
+    .home-name{
+        color: white;
+        background-color: transparent;
+        padding-left: 10px;
+        padding-top: 15%;
+    }
+    
+    .home-pos-title{
+        color: white;
+        background-color: transparent;
+        margin-top: -5%;
+        font-size: 24px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    
+    .home-location{
+        color: white;
+        margin-right: 112px;
+        font-size: 18px;
+    }
+    
+    .bi.bi-geo-alt-fill{
+        color: red;
+    }
+    
+    .home-icons{
+        margin-right: 170px;
+        margin-top: -3%;
+    }
+    
+    #home-instagram{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-instagram:hover{
+        color: grey;
+    }
+    
+    #home-linkedin{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-linkedin:hover{
+        color: grey;
+    }
+    
+    #home-github{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-github:hover{
+        color: grey;
+    }
+    
+    #home-resume{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-resume:hover{
+        color: grey;
+    }
 }
 
-.home-main-container::before,
-.home-main-container::after {
-  content: '';
-  position: absolute;
-  width: 20px; 
-  height: 20px; 
-  border: 2px solid yellow;
-  border-radius: 2px;
+
+
+
+/* 
+    ---------------------------------
+    Screen Size - For Medium Screens
+    --------------------------------
+*/
+
+@media only screen and (min-width: 600px) and (max-width: 1100px){
+    .home-main-container{
+        margin-top: 15%;
+        display: inline-flex;
+        overflow: hidden;
+        position: relative; 
+        border: none;
+    }
+    
+    .home-main-container::before,
+    .home-main-container::after {
+        content: '';
+        position: absolute;
+        border: 1px solid yellow;
+    }
+    
+    .home-main-container::before {
+        top: 0px;
+        right: 0px;
+        width: 20px;
+        height: 20px;
+        border-top-right-radius: 10px;
+        border-left: none;
+        border-bottom: none;
+    }
+    
+    .home-main-container::after {
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        border-bottom-right-radius: 10px;
+        border-left: none;
+        border-top: none;
+    }
+    
+    .home-headshot-container{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .home-headshot{
+        width: 75%; 
+        height: 100%; 
+        border-radius: 10px;
+    }
+
+    .home-more-info{
+    
+    }
+    
+    .home-menue-bar{
+    
+    }
+
+    .home-name{
+        color: white;
+        background-color: transparent;
+        padding-right: 50px;
+        padding-top: 15%;
+    }
+
+    .home-pos-title{
+        color: white;
+        background-color: transparent;
+        margin-top: -5%;
+        font-size: 24px;
+        text-align: left;
+        padding-right: 40px;
+    }
+    
+    .home-location{
+        color: white;
+        margin-right: 112px;
+        font-size: 18px;
+    }
+
+    .bi.bi-geo-alt-fill{
+        color: red;
+    }
+    
+    .home-icons{
+        margin-right: 170px;
+        margin-top: -3%;
+    }
+
+    #home-instagram{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-instagram:hover{
+        color: grey;
+    }
+    
+    #home-linkedin{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-linkedin:hover{
+        color: grey;
+    }
+    
+    #home-github{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-github:hover{
+        color: grey;
+    }
+    
+    #home-resume{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-resume:hover{
+        color: grey;
+    }
 }
 
-.home-main-container::before {
-  top: 31%;
-  right: 35%;
-  border-left: none;
-  border-bottom: none;
-}
+/*  
+    --------------------------------
+    Screen Size - For Mobile 
+    --------------------------------
+*/
 
-.home-main-container::after {
-  bottom: 47%;
-  right: 35%;
-  border-left: none;
-  border-top: none;
-}
+@media only screen and (max-width: 600px){
+    .home-main-container{
+        margin-top: 15%;
+        display: inline-flex;
+        overflow: hidden;
+        position: relative; 
+        border: none;
+    }
+    
+    .home-main-container::before,
+    .home-main-container::after {
+        content: '';
+        position: absolute;
+        border: 1px solid yellow;
+    }
+    
+    .home-main-container::before {
+        top: 0px;
+        right: 0px;
+        width: 20px;
+        height: 20px;
+        border-top-right-radius: 10px;
+        border-left: none;
+        border-bottom: none;
+    }
+    
+    .home-main-container::after {
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        border-bottom-right-radius: 10px;
+        border-left: none;
+        border-top: none;
+    }
+    
+    .home-headshot-container{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .home-headshot{
+        width: 75%; 
+        height: 100%; 
+        border-radius: 10px;
+    }
 
-.home-headshot-container{
-    background-color: yellow;
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    margin: 0 auto;
-}
+    .home-more-info{
+    
+    }
+    
+    .home-menue-bar{
+    
+    }
 
-.home-more-info{
+    .home-name{
+        color: white;
+        background-color: transparent;
+        padding-right: 65px;
+        padding-top: 15%;
+    }
 
-}
+    .home-pos-title{
+        color: white;
+        background-color: transparent;
+        margin-top: -5%;
+        font-size: 24px;
+        text-align: left;
+        padding-right: 40px;
+    }
+    
+    .home-location{
+        color: white;
+        margin-right: 112px;
+        font-size: 18px;
+        margin-top: -3%;
+    }
 
-.home-name{
-    color: white;
-    background-color: transparent;
-    padding-left: 10px;
-    padding-top: 15%;
-}
+    .bi.bi-geo-alt-fill{
+        color: red;
+    }
+    
+    .home-icons{
+        margin-right: 170px;
+        margin-top: -3%;
+    }
 
-.home-pos-title{
-    color: white;
-    background-color: transparent;
-    margin-top: -5%;
-    font-size: 24px;
-    text-align: left;
-    padding-left: 10px;
-}
-
-.home-location{
-    color: white;
-    margin-right: 112px;
-    font-size: 18px;
-}
-
-.bi.bi-geo-alt-fill{
-    color: red;
-}
-
-.home-icons{
-    margin-right: 170px;
-    margin-top: -3%;
-}
-
-#home-instagram{
-    color: white;
-    padding-right: 5px;
-}
-
-#home-instagram:hover{
-    color: grey;
-}
-
-#home-linkedin{
-    color: white;
-    padding-right: 5px;
-}
-
-#home-linkedin:hover{
-    color: grey;
-}
-
-#home-github{
-    color: white;
-    padding-right: 5px;
-}
-
-#home-github:hover{
-    color: grey;
-}
-
-#home-resume{
-    color: white;
-    padding-right: 5px;
-}
-
-#home-resume:hover{
-    color: grey;
+    #home-instagram{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-instagram:hover{
+        color: grey;
+    }
+    
+    #home-linkedin{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-linkedin:hover{
+        color: grey;
+    }
+    
+    #home-github{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-github:hover{
+        color: grey;
+    }
+    
+    #home-resume{
+        color: white;
+        padding-right: 5px;
+    }
+    
+    #home-resume:hover{
+        color: grey;
+    }
 }
