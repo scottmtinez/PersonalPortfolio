@@ -9,6 +9,8 @@ function Projects() {
         <div className='projects-box'>1</div>
         <div className='projects-box'>2</div>
         <div className='projects-box'>3</div>
+        <div className='projects-box'>4</div>
+        <div className='projects-box'>5</div>
       </div>
     </div>
   );
