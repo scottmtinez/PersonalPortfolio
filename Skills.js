@@ -20,6 +20,10 @@ import Photoshop from '../images/PhotoShopLogo.png';
 import PHP from '../images/PHPLogo.png';
 import Python from '../images/PythonLogo.png';
 import Swift from '../images/SwiftLogo.png';
+import PowerApps from '../images/MSPowerAppsLogo.png';
+import PowerBI from '../images/PowerBILogo.png';
+import Automate from '../images/AutomateLogo.png';
+import VA from '../images/VirtualAgents.png';
 
 function Skills() {
   return (
@@ -46,9 +50,15 @@ function Skills() {
         <img src={Figma} className='skills-icon'/>
         <img src={Illustrator} className='skills-icon'/>
         <img src={Photoshop} className='skills-icon'/>
+        <img src={PowerApps} className='skills-icon'/>
+        <img src={PowerBI} className='skills-icon'/>
+        <img src={Automate} className='skills-icon'/>
+        <img src={VA} className='skills-icon'/>
       </div>
     </div>
   );
 }
+
+export default Skills;
 
 export default Skills;
