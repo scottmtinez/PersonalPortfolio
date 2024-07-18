@@ -9,7 +9,7 @@ import NodeJS from '../images/nodejsLogo.png';
 import ReactJS from '../images/reactjsLogo.png';
 import Bootstraps from '../images/BootstrapsLogo.png';
 import Figma from '../images/FigmaLogo.png';
-import Firebase from '../images/FigmaLogo.png';
+import Firebase from '../images/FirebaseDBLogo.png';
 import Illustrator from '../images/IllustratorLogo.png';
 import Laravel from '../images/LaravelLogo.png';
 import Linux from '../images/LinuxLogo.png';
@@ -43,7 +43,7 @@ function Skills() {
         <img src={MongoDB} className='skills-icon'/>
         <img src={MariaDB} className='skills-icon'/>
         <img src={Firebase} className='skills-icon'/>
-
+        <img src={Figma} className='skills-icon'/>
         <img src={Illustrator} className='skills-icon'/>
         <img src={Photoshop} className='skills-icon'/>
       </div>
