@@ -6,8 +6,8 @@
 
 @media only screen and (min-width: 1100px){
     .projects{
-        
-        
+        margin-top: 30%;
+        padding-top: 10%;
     }    
 
     .projects-title{
@@ -31,6 +31,50 @@
         border-radius: 10px;
         margin-bottom: 25px;
         
+    }
+
+    .project-btn-Demo{
+        color: black;
+        background-color: white;
+        margin: 0 auto;
+        margin-top: 162px;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .project-btn-Demo:hover{
+        background-color: lightblue;
+    }
+
+    .project-btn-Code{
+        color: black;
+        background-color: white;
+        margin: 0 auto;
+        width: 200px;
+        border-radius: 10px;
+    }
+    
+    .project-btn-Code:hover{
+        background-color: lightblue;
+    }
+
+    .project-picture-container{
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 15px;
+        background-color: transparent;
+    }
+
+    #projects-portfolio-image{
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;    
+    }
+
+    #projects-portfolio-image{
+        background-image: url('../images/OldPortfolio.jpg');
+        background-size: cover;
     }
 }
 
