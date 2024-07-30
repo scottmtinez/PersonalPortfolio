@@ -1,9 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './ContactMe.css';
 
 function ContactMe() {
   const form = useRef();
+  const [notification, setNotification] = useState({ message: '', type: '' });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -11,10 +12,17 @@ function ContactMe() {
     emailjs.sendForm('HIDDEN', 'HIDDEN', form.current, 'HIDDEN')
       .then((result) => {
           console.log(result.text);
-          alert('Message sent successfully!');
+          setNotification({ message: 'Message sent successfully!', type: 'success' });
+          setTimeout(() => {
+            setNotification({ message: '', type: '' });
+            window.location.reload(); // Refresh the page after 3 seconds
+          }, 3000); // Remove notification after 3 seconds
       }, (error) => {
           console.log(error.text);
-          alert('An error occurred, please try again.');
+          setNotification({ message: 'An error occurred, please try again.', type: 'error' });
+          setTimeout(() => {
+            setNotification({ message: '', type: '' });
+          }, 3000); // Remove notification after 3 seconds
       });
   };
 
@@ -40,6 +48,12 @@ function ContactMe() {
         </div>
 
         <input type='submit' className='submit-message' value='Send Message'></input>
+
+        {notification.message && (
+          <div className={`notification ${notification.type}`}>
+            {notification.message}
+          </div>
+        )}
       
       </form>
     </div>
