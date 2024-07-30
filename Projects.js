@@ -24,7 +24,7 @@ function Projects() {
       title: 'OLD PORTFOLIO',
       create: 'Created with HTML, CSS, JavaScript & PHP',
       info: 'This portfolio website serves as a showcase for my personal front-end development endeavors. Explore a curated collection of projects that highlight my skills in HTML, CSS, JavaScript, and PHP. Discover the intersection of creativity and functionality through my work, each project crafted with passion and a commitment to delivering an engaging user experience.',
-      demoLink: 'https://scottmartinezportfolio.com/',
+      demoLink: 'http://oldportfolio.scottmartinezportfolio.com/',
       codeLink: 'https://github.com/scottmtinez/Portfolio',
       figma: '',
     },
@@ -96,5 +96,7 @@ function Projects() {
     </div>
   );
 }
+
+export default Projects;
 
 export default Projects;
