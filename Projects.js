@@ -20,10 +20,19 @@ function Projects() {
 
   const projects = [
     {
+      id: 'projects-newPortfolio-image',
+      title: 'MY PORTFOLIO',
+      create: 'Created with React.js, Email.js, HTML, CSS & Bootstraps',
+      info: 'This is my updated personal portfolio. It showcases my full-stack development skills, including expertise in front-end and back-end technologies, and highlights my ability to create seamless, user-friendly web applications.',
+      demoLink: 'https://scottmartinezportfolio.com/',
+      codeLink: 'https://github.com/scottmtinez/PersonalPortfolio',
+      figma: '',
+    },
+    {
       id: 'projects-portfolio-image',
       title: 'OLD PORTFOLIO',
       create: 'Created with HTML, CSS, JavaScript & PHP',
-      info: 'This portfolio website serves as a showcase for my personal front-end development endeavors. Explore a curated collection of projects that highlight my skills in HTML, CSS, JavaScript, and PHP. Discover the intersection of creativity and functionality through my work, each project crafted with passion and a commitment to delivering an engaging user experience.',
+      info: 'This my old portfolio website that serves as a showcase for my personal front-end development endeavors. Explore a curated collection of projects that highlight my skills in HTML, CSS, JavaScript, and PHP. Discover the intersection of creativity and functionality through my work, each project crafted with passion and a commitment to delivering an engaging user experience.',
       demoLink: 'http://oldportfolio.scottmartinezportfolio.com/',
       codeLink: 'https://github.com/scottmtinez/Portfolio',
       figma: '',
@@ -96,7 +105,5 @@ function Projects() {
     </div>
   );
 }
-
-export default Projects;
 
 export default Projects;
