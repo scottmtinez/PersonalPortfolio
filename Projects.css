@@ -150,18 +150,18 @@
 */
 
 @media only screen and (min-width: 600px) and (max-width: 1100px){
-    .projects {
+    .projects{
         margin-top: 5%;
         padding-top: 10%;
     }    
 
-    .projects-title {
+    .projects-title{
         background-color: transparent;
         color: white;
         padding-bottom: 10px;
     }
 
-    .project-box-title {
+    .project-box-title{
         color: white;
         background-color: black;
         border: solid 1px black;
@@ -171,71 +171,73 @@
         margin-bottom: 14px;
     }
 
-    .projects-container {
-        display: flex;
-        flex-wrap: wrap;
+    .projects-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 5px;
         justify-content: center;
         align-items: center;
         background-color: transparent;
-        gap: 5px;
+        margin: 0 auto;
     }
 
-    .projects-box {
+    .projects-box{
         border: solid 1px white;
         width: 200px;
-        height: auto; 
+        height: 200px;
         border-radius: 10px;
         margin-bottom: 25px;
-        position: relative;
+        
     }
 
-    .project-btn-Demo {
+    .project-btn-Demo{
         color: black;
         background-color: white;
         margin: 0 auto;
-        margin-top: 50%;
-        width: calc(100% - 20px); /* Adjust width to fit within the box */
+        margin-top: 162px;
+        width: 200px;
         border-radius: 10px;
     }
 
-    .project-btn-Demo:hover {
+    .project-btn-Demo:hover{
         background-color: lightblue;
         color: black;
     }
 
-    .project-btn-Code {
+    .project-btn-Code{
         color: black;
         background-color: white;
-        width: calc(100% - 20px); /* Adjust width to fit within the box */
+        margin: 0 auto;
+        width: 200px;
         border-radius: 10px;
     }
-
-    .project-btn-Code:hover {
+    
+    .project-btn-Code:hover{
         background-color: lightblue;
         color: black;
     }
 
-    .project-btn-Info {
+    .project-btn-Info{
         all: unset;
-        margin: 0 auto;
-        display: block; 
+        color: grey;
+        padding-bottom: 500px;
     }
 
-    .project-btn-Info:hover {
+    .project-btn-Info:hover{
         color: lightblue;
     }
 
-    .project-btn-Info:active {
+    .project-btn-Info:active{
         width: 1%;
         height: 1%;
     }
 
-    .bi.bi-info-square {
+    .bi.bi-info-square{
         background-color: transparent;
         color: white;
     }
 
-    .project-picture-container {
+    .project-picture-container{
         color: white;
         text-align: center;
         font-weight: bold;
@@ -243,42 +245,49 @@
         background-color: transparent;
     }
 
-    #projects-portfolio-image {
+    #projects-portfolio-image{
         background-image: url('../images/OldPortfolio.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
 
-    #projects-MovieInsider-image {
+    #projects-MovieInsider-image{
         background-image: url('../images/MovieInsider.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;    
     }
 
-    #projects-RecipeWebsite-image {
+    #projects-RecipeWebsite-image{
         background-image: url('../images/RecipeWebsite.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;    
     }
 
-    #projects-Workout-image {
+    #projects-Workout-image{
         background-image: url('../images/comingSoon.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;    
     }
 
-    #projects-RestroomFinder-image {
+    #projects-RestroomFinder-image{
         background-image: url('../images/comingSoon.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;    
     }
 
-    .project-info-style {
+    #projects-newPortfolio-image{
+        background-image: url('../images/NewPortfolio.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;    
+    }
+
+    .project-info-style{
         color: rgb(81, 81, 81);
         font-size: 12px;
         text-align: justify;
@@ -296,138 +305,6 @@
 */
 
 @media only screen and (max-width: 600px) {
-    .projects {
-        margin-top: 5%;
-        padding-top: 10%;
-    }    
-
-    .projects-title {
-        background-color: transparent;
-        color: white;
-        padding-bottom: 10px;
-    }
-
-    .project-box-title {
-        color: white;
-        background-color: black;
-        border: solid 1px black;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom: solid 1px black;
-        margin-bottom: 14px;
-    }
-
-    .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        gap: 5px;
-    }
-
-    .projects-box {
-        border: solid 1px white;
-        width: 200px;
-        height: auto; 
-        border-radius: 10px;
-        margin-bottom: 25px;
-        position: relative;
-    }
-
-    .project-btn-Demo {
-        color: black;
-        background-color: white;
-        margin: 0 auto;
-        margin-top: 50%;
-        width: calc(100% - 20px); /* Adjust width to fit within the box */
-        border-radius: 10px;
-    }
-
-    .project-btn-Demo:hover {
-        background-color: lightblue;
-        color: black;
-    }
-
-    .project-btn-Code {
-        color: black;
-        background-color: white;
-        width: calc(100% - 20px); /* Adjust width to fit within the box */
-        border-radius: 10px;
-    }
-
-    .project-btn-Code:hover {
-        background-color: lightblue;
-        color: black;
-    }
-
-    .project-btn-Info {
-        all: unset;
-        margin: 0 auto;
-        display: block; 
-    }
-
-    .project-btn-Info:hover {
-        color: lightblue;
-    }
-
-    .project-btn-Info:active {
-        width: 1%;
-        height: 1%;
-    }
-
-    .bi.bi-info-square {
-        background-color: transparent;
-        color: white;
-    }
-
-    .project-picture-container {
-        color: white;
-        text-align: center;
-        font-weight: bold;
-        padding-top: 15px;
-        background-color: transparent;
-    }
-
-    #projects-portfolio-image {
-        background-image: url('../images/OldPortfolio.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    #projects-MovieInsider-image {
-        background-image: url('../images/MovieInsider.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;    
-    }
-
-    #projects-RecipeWebsite-image {
-        background-image: url('../images/RecipeWebsite.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;    
-    }
-
-    #projects-Workout-image {
-        background-image: url('../images/comingSoon.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;    
-    }
-
-    #projects-RestroomFinder-image {
-        background-image: url('../images/comingSoon.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;    
-    }
-
-    .project-info-style {
-        color: rgb(81, 81, 81);
-        font-size: 12px;
-        text-align: justify;
-    }
+    
 }
 
