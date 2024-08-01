@@ -56,9 +56,18 @@ function Projects() {
       figma: '',
     },
     {
+      id: 'projects-PackedAI-image',
+      title: 'PACKING LIST',
+      create: 'IN PROGRESS - Being created with React.js, HTML, CSS, Node.js, Firebase, MySQL, & an API',
+      info: '',
+      demoLink: '',
+      codeLink: 'https://github.com/scottmtinez/Packed-AI',
+      figma: '',
+    },
+    {
       id: 'projects-Workout-image',
       title: 'WORKOUT TRACKER',
-      create: 'Created with React.js, HTML, CSS, MySQL, & MongoDB',
+      create: 'IN PROGRESS - being created with React.js, HTML, CSS, MySQL, & MongoDB',
       info: 'Workout Website',
       demoLink: 'http://workouttracker.scottmartinezportfolio.com/',
       codeLink: 'https://github.com/scottmtinez/WorkoutTracker',
@@ -67,7 +76,7 @@ function Projects() {
     {
       id: 'projects-RestroomFinder-image',
       title: 'RESTROOM FINDER',
-      create: 'Created with React.js, HTML, CSS, MySQL, & MongoDB',
+      create: 'IN PROGRESS - being created with React.js, HTML, CSS, MySQL, & MongoDB',
       info: 'Restroom Finder',
       demoLink: 'http://restroomfinder.scottmartinezportfolio.com/',
       codeLink: 'https://github.com/scottmtinez/RestroomFinder',
@@ -82,28 +91,25 @@ function Projects() {
     <div className='projects' id='projects'>
       <h1 className='projects-title'>Projects</h1>
       <div className='projects-container'>
-
         {projects.map((project, index) => (
-
           <div className='projects-box' id={project.id} key={project.id}>
             <div className='project-box-title'>{project.title}</div>
-            <button className='project-btn-Demo' onClick={() => portfolioDemo(project.demoLink)}>DEMO</button>
-            <button className='project-btn-Code' onClick={() => portfolioCode(project.codeLink)}>CODE</button>
-            <button className='project-btn-Info' onClick={() => toggleDropdown(index)}><i className="bi bi-info-square"></i></button>
-
+            <div className='project-btn-container'>
+              <button className='project-btn-Demo' onClick={() => portfolioDemo(project.demoLink)}>DEMO</button>
+              <button className='project-btn-Code' onClick={() => portfolioCode(project.codeLink)}>CODE</button>
+              <button className='project-btn-Info' onClick={() => toggleDropdown(index)}><i className="bi bi-info-square"></i></button>
+            </div>
             {dropdownStates[index] && (
               <div className='dropdown-content'>
                 <p className='project-info-style'>{project.info}</p>
                 <p className='project-info-style'>{project.create}</p>
               </div>
             )}
-            
           </div>
         ))}
-          
       </div>
     </div>
-  );
+  );  
 }
 
 export default Projects;
