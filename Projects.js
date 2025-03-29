@@ -56,33 +56,23 @@ function Projects() {
       figma: '',
     },
     {
-      id: 'projects-PackedAI-image',
-      title: 'PACKING LIST',
-      create: 'IN PROGRESS - Being created with React.js, HTML, CSS, Node.js, Firebase, MySQL, & an API',
-      info: '',
-      demoLink: '',
-      codeLink: 'https://github.com/scottmtinez/Packed-AI',
-      figma: '',
-    },
-    {
       id: 'projects-Workout-image',
       title: 'WORKOUT TRACKER',
-      create: 'IN PROGRESS - being created with React.js, HTML, CSS, MySQL, & MongoDB',
-      info: 'Workout Website',
-      demoLink: 'http://workouttracker.scottmartinezportfolio.com/',
-      codeLink: 'https://github.com/scottmtinez/WorkoutTracker',
+      create: 'Created with React.js, HTML, CSS, MySQL, & MongoDB',
+      info: 'The Workout Tracker & Calorie Logger is a dynamic, full-stack web application designed to help users track their workouts, monitor their calorie intake, and stay motivated through insightful blog posts. Built using Node.js, React.js, and MongoDB, this app offers a modern and seamless experience, allowing users to manage their fitness journey effectively.',
+      demoLink: '#',
+      codeLink: 'https://github.com/scottmtinez/Workout-Tracker',
       figma: '',
     },
     {
-      id: 'projects-RestroomFinder-image',
-      title: 'RESTROOM FINDER',
-      create: 'IN PROGRESS - being created with React.js, HTML, CSS, MySQL, & MongoDB',
-      info: 'Restroom Finder',
-      demoLink: 'http://restroomfinder.scottmartinezportfolio.com/',
-      codeLink: 'https://github.com/scottmtinez/RestroomFinder',
+      id: 'projects-sadco-image',
+      title: 'SAD Co. Company Website',
+      create: 'Created with React.js, Node.js, HTML, CSS & Sendgrid',
+      info: 'This start up companies website is to let customers know about the company and what they do. It is a simple website that has a contact form that sends emails to the company using Sendgrid.',
+      demoLink: 'https://sadco.scottmartinezportfolio.com/',
+      codeLink: 'https://github.com/scottmtinez/SADCoWebsite',
       figma: '',
     },
-
     
   ];
 
