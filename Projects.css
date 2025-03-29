@@ -132,21 +132,22 @@ body {
 }
 
 #projects-Workout-image {
-    background-image: url('../images/comingSoon.png');
+    background-image: url('../images/workouttracker.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;    
 }
 
-#projects-RestroomFinder-image {
-    background-image: url('../images/comingSoon.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;    
-}
 
 #projects-newPortfolio-image {
     background-image: url('../images/NewPortfolio.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+#projects-sadco-image {
+    background-image: url('../images/SadCoWebsite.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;   
@@ -225,4 +226,3 @@ body {
         padding: 0.75rem;
     }
 }
-
